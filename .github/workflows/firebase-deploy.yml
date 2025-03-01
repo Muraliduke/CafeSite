@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Update Browserslist database
+      - name: Update Browserslist database
+        run: npx update-browserslist-db@latest
+
       # Build the project
       - name: Build project
         run: npm run build
